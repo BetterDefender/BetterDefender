@@ -52,25 +52,26 @@
   <img src="https://img.shields.io/badge/Git-0E7490?style=flat-square&amp;labelColor=0D1117&amp;logo=git&amp;logoColor=white" alt="Git" />
 </p>
 
-<h2 align="center"><samp>▍ 03 // FEATURED OPS</samp></h2>
+<h2 align="center"><samp>▍ 03 // FEATURED WORK</samp></h2>
 
 <p align="center">
+  <a href="https://github.com/BetterDefender/CodexHarbor"><img src="assets/cards/codexharbor.svg" width="48.5%" alt="CodexHarbor — Codex account manager for macOS and Windows" /></a>
   <a href="https://github.com/BetterDefender/revshell"><img src="assets/cards/revshell.svg" width="48.5%" alt="revshell — reverse shell generator" /></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/BetterDefender/AwvsBatchImport"><img src="assets/cards/awvs-batch-import.svg" width="48.5%" alt="AwvsBatchImport — AWVS batch import" /></a>
-</p>
-
-<p align="center">
   <a href="https://github.com/BetterDefender/SpringBootScan"><img src="assets/cards/springbootscan.svg" width="48.5%" alt="SpringBootScan — Spring Boot leak scanner" /></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/BetterDefender/PentestBox"><img src="assets/cards/pentestbox.svg" width="48.5%" alt="PentestBox — pentest utilities" /></a>
-</p>
-
-<p align="center">
   <a href="https://github.com/BetterDefender/anchorScan"><img src="assets/cards/anchorscan.svg" width="48.5%" alt="anchorScan — route discovery and screenshot reporting" /></a>
-  <a href="https://github.com/BetterDefender/API-Strike"><img src="assets/cards/api-strike.svg" width="48.5%" alt="API-Strike — API endpoint discovery extension" /></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/BetterDefender?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE%20ALL%20REPOSITORIES-C81E45?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Explore all repositories" /></a>
+  <a href="https://github.com/BetterDefender/API-Strike"><img src="assets/cards/api-strike.svg" width="48.5%" alt="API-Strike — API endpoint discovery extension" /></a>
+  <a href="https://github.com/BetterDefender?tab=repositories"><img src="assets/cards/more.svg" width="48.5%" alt="More on GitHub — 43 public repositories" /></a>
 </p>
 
 <h2 align="center"><samp>▍ 04 // TELEMETRY</samp></h2>

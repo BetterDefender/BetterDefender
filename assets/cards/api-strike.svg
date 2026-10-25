@@ -22,7 +22,7 @@
   <path d="M436 10H450V24" fill="none" stroke="#FF2D55" stroke-width="1" opacity="0.35"/>
 
   <g font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace">
-    <text x="22" y="26" font-size="9" letter-spacing="1.5" fill="#5E6E84">[06]</text>
+    <text x="22" y="26" font-size="9" letter-spacing="1.5" fill="#5E6E84">[07]</text>
     <text x="438" y="26" text-anchor="end" font-size="8" letter-spacing="1.2" fill="#5E6E84">OPEN SOURCE</text>
     <text x="22" y="57" font-size="21" font-weight="700" fill="#F2F6FB">API-Strike</text>
     <text x="22" y="82" font-size="11.5" fill="#8B9AAD">Browser extension that captures and</text>

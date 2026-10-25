@@ -17,8 +17,17 @@ OUT = ROOT / "assets" / "cards"
 
 CARDS = [
     {
-        "slug": "revshell",
+        "slug": "codexharbor",
         "index": 1,
+        "title": "CodexHarbor",
+        "stars": 0,
+        "lang": "Swift",
+        "desc": ["A desktop account manager for Codex", "on macOS and Windows."],
+        "tags": ["DESKTOP", "CODEX"],
+    },
+    {
+        "slug": "revshell",
+        "index": 2,
         "title": "revshell",
         "stars": 48,
         "lang": "Go",
@@ -27,7 +36,7 @@ CARDS = [
     },
     {
         "slug": "awvs-batch-import",
-        "index": 2,
+        "index": 3,
         "title": "AwvsBatchImport",
         "stars": 24,
         "lang": "Python",
@@ -36,7 +45,7 @@ CARDS = [
     },
     {
         "slug": "springbootscan",
-        "index": 3,
+        "index": 4,
         "title": "SpringBootScan",
         "stars": 19,
         "lang": "Python",
@@ -45,7 +54,7 @@ CARDS = [
     },
     {
         "slug": "pentestbox",
-        "index": 4,
+        "index": 5,
         "title": "PentestBox",
         "stars": 2,
         "lang": "Toolkit",
@@ -54,7 +63,7 @@ CARDS = [
     },
     {
         "slug": "anchorscan",
-        "index": 5,
+        "index": 6,
         "title": "anchorScan",
         "stars": 2,
         "lang": "Python",
@@ -63,12 +72,22 @@ CARDS = [
     },
     {
         "slug": "api-strike",
-        "index": 6,
+        "index": 7,
         "title": "API-Strike",
         "stars": 0,
         "lang": "JavaScript",
         "desc": ["Browser extension that captures and", "maps API endpoints in real time."],
         "tags": ["BROWSER", "RECON"],
+    },
+    {
+        "slug": "more",
+        "index": 8,
+        "title": "MORE ON GITHUB",
+        "stars": None,
+        "lang": None,
+        "desc": ["43 public repositories and counting.", "Browse the full arsenal on GitHub."],
+        "tags": [],
+        "cta": True,
     },
 ]
 
@@ -96,20 +115,25 @@ def pill(x: int, y: int, text: str, accent: bool) -> tuple[str, int]:
 
 
 def build_card(card: dict) -> str:
-    star = (
-        f'<text x="438" y="26" text-anchor="end" font-size="10" fill="#FFB020">★ {card["stars"]}</text>'
-        if card["stars"] > 0
-        else '<text x="438" y="26" text-anchor="end" font-size="8" letter-spacing="1.2" fill="#5E6E84">OPEN SOURCE</text>'
-    )
-
-    pills: list[str] = []
-    x = 22
-    p, x = pill(x, 126, card["lang"].upper(), True)
-    pills.append(p)
-    for tag in card["tags"]:
-        p, x = pill(x, 126, tag, False)
+    if card.get("cta"):
+        top_right = '<text x="438" y="26" text-anchor="end" font-size="10" letter-spacing="0.6" fill="#22D3EE">43 REPOS</text>'
+        cta_pill, _ = pill(22, 126, "EXPLORE ALL REPOS", True)
+        pills_svg = cta_pill
+        bottom_right = "GITHUB →"
+    else:
+        if card["stars"] > 0:
+            top_right = f'<text x="438" y="26" text-anchor="end" font-size="10" fill="#FFB020">★ {card["stars"]}</text>'
+        else:
+            top_right = '<text x="438" y="26" text-anchor="end" font-size="8" letter-spacing="1.2" fill="#5E6E84">OPEN SOURCE</text>'
+        pills: list[str] = []
+        x = 22
+        p, x = pill(x, 126, card["lang"].upper(), True)
         pills.append(p)
-    pills_svg = "".join(pills)
+        for tag in card["tags"]:
+            p, x = pill(x, 126, tag, False)
+            pills.append(p)
+        pills_svg = "".join(pills)
+        bottom_right = "OPEN →"
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="460" height="158" viewBox="0 0 460 158" role="img" aria-labelledby="title desc">
   <title id="title">{escape(card["title"])}</title>
@@ -136,13 +160,13 @@ def build_card(card: dict) -> str:
 
   <g font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace">
     <text x="22" y="26" font-size="9" letter-spacing="1.5" fill="#5E6E84">[{card["index"]:02d}]</text>
-    {star}
+    {top_right}
     <text x="22" y="57" font-size="21" font-weight="700" fill="#F2F6FB">{escape(card["title"])}</text>
     <text x="22" y="82" font-size="11.5" fill="#8B9AAD">{escape(card["desc"][0])}</text>
     <text x="22" y="99" font-size="11.5" fill="#8B9AAD">{escape(card["desc"][1])}</text>
     <path d="M22 116H438" stroke="#172230"/>
     {pills_svg}
-    <text x="438" y="139" text-anchor="end" font-size="9" letter-spacing="1.2" fill="#FF2D55">OPEN →</text>
+    <text x="438" y="139" text-anchor="end" font-size="9" letter-spacing="1.2" fill="#FF2D55">{bottom_right}</text>
   </g>
 </svg>
 '''
