@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">whoami — Gh0stX</title>
+  <desc id="desc">A terminal panel introducing Gh0stX as a red team operator, with focus areas, featured tools and an operator dossier.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080D15"/>
+      <stop offset="1" stop-color="#060A10"/>
+    </linearGradient>
+    <radialGradient id="redGlow" cx="0.04" cy="0.02" r="0.7">
+      <stop offset="0" stop-color="#FF2D55" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#FF2D55" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cyanGlow" cx="1" cy="1" r="0.6">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="divider" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E2B3D" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#1E2B3D"/>
+      <stop offset="1" stop-color="#1E2B3D" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#22D3EE" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#172333" stroke-width="1"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect x="1" y="1" width="1198" height="398" rx="12"/>
+    </clipPath>
+    <style>
+      .mono { font-family: 'JetBrains Mono','SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace; }
+      .ln { opacity: 1; animation: reveal 0.01s linear both; }
+      .d1 { animation-delay: 0.10s; }
+      .d2 { animation-delay: 0.22s; }
+      .d3 { animation-delay: 0.36s; }
+      .d4 { animation-delay: 0.48s; }
+      .d5 { animation-delay: 0.58s; }
+      .d6 { animation-delay: 0.70s; }
+      .d7 { animation-delay: 0.80s; }
+      .d8 { animation-delay: 0.90s; }
+      .d9 { animation-delay: 1.00s; }
+      .dx { animation-delay: 1.10s; }
+      @keyframes reveal { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes blink { 0%,45% { opacity: 1; } 46%,100% { opacity: 0; } }
+      .cursor { animation: blink 1.05s steps(1) infinite; }
+      @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+      .pulse { animation: pulse 2s ease-in-out infinite; }
+      @keyframes scan { 0% { transform: translateY(0); } 100% { transform: translateY(440px); } }
+      .scan { animation: scan 10s linear infinite; }
+      @media (prefers-reduced-motion: reduce) {
+        .ln, .cursor, .pulse, .scan { animation: none; }
+        .ln { opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="1199" height="399" rx="12" fill="url(#bg)" stroke="#1E2B3D"/>
+  <rect x="1" y="1" width="1198" height="398" rx="12" fill="url(#grid)" opacity="0.35"/>
+  <rect x="1" y="1" width="1198" height="398" rx="12" fill="url(#redGlow)"/>
+  <rect x="1" y="1" width="1198" height="398" rx="12" fill="url(#cyanGlow)"/>
+
+  <path d="M1 40V13Q1 1 13 1H1187Q1199 1 1199 13V40Z" fill="#0D1420"/>
+  <path d="M1 40H1199" stroke="#1C2939"/>
+  <circle cx="24" cy="21" r="4" fill="#FF5F57"/>
+  <circle cx="40" cy="21" r="4" fill="#FEBC2E"/>
+  <circle cx="56" cy="21" r="4" fill="#28C840"/>
+
+  <g class="mono">
+    <text x="600" y="26" text-anchor="middle" font-size="10.5" fill="#6E7C91">gh0stx@redteam — whoami</text>
+    <text x="1176" y="26" text-anchor="end" font-size="8.5" fill="#3D4C60">SESSION 0x01</text>
+  </g>
+
+  <g class="mono">
+    <g class="ln d1">
+      <text x="52" y="86" font-size="17" fill="#FF2D55">$</text>
+      <text x="70" y="86" font-size="17" fill="#E6EDF3">whoami</text>
+    </g>
+    <g class="ln d2">
+      <text x="70" y="116" font-size="17" font-weight="700" fill="#F2F6FB">Gh0stX</text>
+      <text x="148" y="116" font-size="17" fill="#9FB0C4">— Red Team Operator</text>
+    </g>
+    <g class="ln d3">
+      <text x="52" y="154" font-size="17" fill="#FF2D55">$</text>
+      <text x="70" y="154" font-size="17" fill="#E6EDF3">cat /etc/focus</text>
+    </g>
+    <g class="ln d4">
+      <text x="70" y="184" font-size="17" fill="#3DFFA2">adversary_simulation</text>
+      <text x="330" y="184" font-size="17" fill="#22D3EE">web_exploitation</text>
+    </g>
+    <g class="ln d5">
+      <text x="70" y="214" font-size="17" fill="#3DFFA2">red_team_tooling</text>
+      <text x="330" y="214" font-size="17" fill="#22D3EE">ai_security</text>
+    </g>
+    <g class="ln d6">
+      <text x="52" y="252" font-size="17" fill="#FF2D55">$</text>
+      <text x="70" y="252" font-size="17" fill="#E6EDF3">ls ~/arsenal</text>
+      <text x="204" y="252" font-size="17" fill="#FF2D55">--featured</text>
+    </g>
+    <g class="ln d7">
+      <text x="70" y="282" font-size="17" fill="#DCE5EF">revshell</text>
+      <text x="190" y="282" font-size="17" fill="#DCE5EF">SpringBootScan</text>
+      <text x="370" y="282" font-size="17" fill="#DCE5EF">AwvsBatchImport</text>
+    </g>
+    <g class="ln d8">
+      <text x="70" y="312" font-size="17" fill="#DCE5EF">API-Strike</text>
+      <text x="190" y="312" font-size="17" fill="#DCE5EF">PentestBox</text>
+      <text x="330" y="312" font-size="17" fill="#DCE5EF">anchorScan</text>
+    </g>
+    <g class="ln d9">
+      <text x="52" y="350" font-size="17" fill="#FF2D55">$</text>
+      <rect class="cursor" x="74" y="336" width="10" height="18" fill="#FF2D55"/>
+    </g>
+  </g>
+
+  <path d="M728 64V364" stroke="url(#divider)"/>
+
+  <g class="ln dx">
+    <rect x="752" y="64" width="396" height="300" rx="10" fill="#0C121C" stroke="#1E2B3D"/>
+    <rect x="752" y="64" width="3" height="300" rx="1.5" fill="#FF2D55"/>
+    <g class="mono">
+      <text x="780" y="94" font-size="10" letter-spacing="2" fill="#FF2D55">OPERATOR // DOSSIER</text>
+      <text x="1120" y="94" text-anchor="end" font-size="9" fill="#3F4E62">0x00</text>
+      <path d="M780 106H1120" stroke="#1B2635"/>
+
+      <text x="780" y="136" font-size="9" letter-spacing="1.5" fill="#5E6E84">HANDLE</text>
+      <text x="890" y="136" font-size="11.5" fill="#D7E0EA">Gh0stX</text>
+
+      <text x="780" y="176" font-size="9" letter-spacing="1.5" fill="#5E6E84">ROLE</text>
+      <text x="890" y="176" font-size="11.5" fill="#D7E0EA">Red Team Operator</text>
+
+      <text x="780" y="216" font-size="9" letter-spacing="1.5" fill="#5E6E84">FOCUS</text>
+      <text x="890" y="216" font-size="11.5" fill="#D7E0EA">Adversary Simulation</text>
+
+      <text x="780" y="256" font-size="9" letter-spacing="1.5" fill="#5E6E84">STACK</text>
+      <text x="890" y="256" font-size="11.5" fill="#D7E0EA">Python · Go · JS · Swift</text>
+
+      <text x="780" y="296" font-size="9" letter-spacing="1.5" fill="#5E6E84">STATUS</text>
+      <circle class="pulse" cx="894" cy="292" r="3.5" fill="#3DFFA2"/>
+      <text x="906" y="296" font-size="11.5" fill="#3DFFA2">OPERATIONAL</text>
+    </g>
+
+    <g fill="#26344A">
+      <rect x="780" y="330" width="2" height="14"/>
+      <rect x="784" y="330" width="4" height="14"/>
+      <rect x="790" y="330" width="2" height="14"/>
+      <rect x="794" y="330" width="4" height="14"/>
+      <rect x="800" y="330" width="4" height="14"/>
+      <rect x="806" y="330" width="2" height="14"/>
+      <rect x="810" y="330" width="4" height="14"/>
+      <rect x="816" y="330" width="2" height="14"/>
+      <rect x="820" y="330" width="4" height="14"/>
+      <rect x="826" y="330" width="4" height="14"/>
+      <rect x="832" y="330" width="2" height="14"/>
+      <rect x="836" y="330" width="4" height="14"/>
+      <rect x="842" y="330" width="4" height="14"/>
+      <rect x="848" y="330" width="2" height="14"/>
+      <rect x="852" y="330" width="4" height="14"/>
+      <rect x="858" y="330" width="4" height="14"/>
+      <rect x="864" y="330" width="2" height="14"/>
+      <rect x="868" y="330" width="4" height="14"/>
+      <rect x="874" y="330" width="4" height="14"/>
+      <rect x="880" y="330" width="2" height="14"/>
+      <rect x="884" y="330" width="4" height="14"/>
+      <rect x="890" y="330" width="4" height="14"/>
+      <rect x="896" y="330" width="2" height="14"/>
+    </g>
+    <text class="mono" x="940" y="341" font-size="7.5" letter-spacing="1" fill="#3F4E62">ID // BD-0x00</text>
+  </g>
+
+  <g class="mono">
+    <text x="52" y="382" font-size="8.5" letter-spacing="1.4" fill="#3B4A5E">[ OPSEC: ENABLED // SESSION: LOCAL ]</text>
+    <text x="1176" y="382" text-anchor="end" font-size="8.5" letter-spacing="1.4" fill="#3B4A5E">[ AUTH: OPERATOR ]</text>
+  </g>
+
+  <rect class="scan" x="1" y="-80" width="1198" height="80" fill="url(#scanGrad)" clip-path="url(#frame)"/>
+</svg>

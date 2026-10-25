@@ -1,0 +1,5 @@
+.DS_Store
+preview.html
+preview-light.html
+__pycache__/
+*.pyc
