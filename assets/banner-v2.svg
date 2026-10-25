@@ -53,7 +53,6 @@
     </filter>
     <style>
       .mono { font-family: 'JetBrains Mono','SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace; }
-      .cjk { font-family: 'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif; }
       .ln { opacity: 1; animation: reveal 0.01s linear both; }
       .d1 { animation-delay: 0.20s; }
       .d2 { animation-delay: 0.45s; }
@@ -124,7 +123,7 @@
     <rect x="64" y="166" width="26" height="2" fill="#FF2D55"/>
 
     <text x="64" y="200" font-size="13" letter-spacing="1.6" fill="#9FB0C4">ADVERSARY SIMULATION  ·  OFFENSIVE TOOLING  ·  AI SECURITY</text>
-    <text class="cjk" x="64" y="230" font-size="14" letter-spacing="1" fill="#7F90A5">红队攻防  /  武器化研究  /  AI 安全</text>
+    <text x="64" y="230" font-size="13" letter-spacing="1.4" fill="#7F90A5">OFFENSE INFORMS DEFENSE <tspan fill="#22D3EE">//</tspan> BUILD · BREAK · DEFEND</text>
     <text x="64" y="278" font-size="11.5" letter-spacing="0.8" fill="#FF2D55">github.com/BetterDefender</text>
     <text x="272" y="278" font-size="11.5" fill="#48586C">// EST. 2019</text>
     <text x="64" y="314" font-size="8.5" letter-spacing="1.4" fill="#3F4E62">[ SESSION ENCRYPTED // AES-256-GCM ]</text>
