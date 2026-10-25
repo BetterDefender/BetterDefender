@@ -71,13 +71,13 @@
 
 <p align="center">
   <a href="https://github.com/BetterDefender/API-Strike"><img src="assets/cards/api-strike.svg" width="48.5%" alt="API-Strike — API endpoint discovery extension" /></a>
-  <a href="https://github.com/BetterDefender?tab=repositories"><img src="assets/cards/more.svg" width="48.5%" alt="More on GitHub — 43 public repositories" /></a>
+  <a href="https://github.com/BetterDefender?tab=repositories"><img src="assets/cards/more.svg" width="48.5%" alt="More on GitHub — 44 public repositories" /></a>
 </p>
 
 <h2 align="center"><samp>▍ 04 // TELEMETRY</samp></h2>
 
 <div align="center">
-  <a href="https://github.com/BetterDefender"><img src="assets/telemetry.svg" alt="GitHub telemetry — 43 public repositories, 99 stars, 9 original tools, active since 2019" width="100%" /></a>
+  <a href="https://github.com/BetterDefender"><img src="assets/telemetry.svg" alt="GitHub telemetry — 44 public repositories, 99 stars, 9 original tools, active since 2019" width="100%" /></a>
 </div>
 
 <h2 align="center"><samp>▍ 05 // CONNECT</samp></h2>

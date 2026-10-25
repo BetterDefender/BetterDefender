@@ -85,7 +85,7 @@ CARDS = [
         "title": "MORE ON GITHUB",
         "stars": None,
         "lang": None,
-        "desc": ["43 public repositories and counting.", "Browse the full arsenal on GitHub."],
+        "desc": ["44 public repositories and counting.", "Browse the full arsenal on GitHub."],
         "tags": [],
         "cta": True,
     },
@@ -116,7 +116,7 @@ def pill(x: int, y: int, text: str, accent: bool) -> tuple[str, int]:
 
 def build_card(card: dict) -> str:
     if card.get("cta"):
-        top_right = '<text x="438" y="26" text-anchor="end" font-size="10" letter-spacing="0.6" fill="#22D3EE">43 REPOS</text>'
+        top_right = '<text x="438" y="26" text-anchor="end" font-size="10" letter-spacing="0.6" fill="#22D3EE">44 REPOS</text>'
         cta_pill, _ = pill(22, 126, "EXPLORE ALL REPOS", True)
         pills_svg = cta_pill
         bottom_right = "GITHUB →"

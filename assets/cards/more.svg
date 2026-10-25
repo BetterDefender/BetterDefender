@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="460" height="158" viewBox="0 0 460 158" role="img" aria-labelledby="title desc">
   <title id="title">MORE ON GITHUB</title>
-  <desc id="desc">43 public repositories and counting. Browse the full arsenal on GitHub.</desc>
+  <desc id="desc">44 public repositories and counting. Browse the full arsenal on GitHub.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0C121C"/>
@@ -23,9 +23,9 @@
 
   <g font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace">
     <text x="22" y="26" font-size="9" letter-spacing="1.5" fill="#5E6E84">[08]</text>
-    <text x="438" y="26" text-anchor="end" font-size="10" letter-spacing="0.6" fill="#22D3EE">43 REPOS</text>
+    <text x="438" y="26" text-anchor="end" font-size="10" letter-spacing="0.6" fill="#22D3EE">44 REPOS</text>
     <text x="22" y="57" font-size="21" font-weight="700" fill="#F2F6FB">MORE ON GITHUB</text>
-    <text x="22" y="82" font-size="11.5" fill="#8B9AAD">43 public repositories and counting.</text>
+    <text x="22" y="82" font-size="11.5" fill="#8B9AAD">44 public repositories and counting.</text>
     <text x="22" y="99" font-size="11.5" fill="#8B9AAD">Browse the full arsenal on GitHub.</text>
     <path d="M22 116H438" stroke="#172230"/>
     <rect x="22" y="126" width="114" height="18" rx="9" fill="#FF2D55" fill-opacity="0.08" stroke="#FF2D55"/><text x="29" y="139" font-size="9" letter-spacing="0.6" fill="#FF2D55">EXPLORE ALL REPOS</text>
